@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -16,17 +17,26 @@ public class VintageStore extends JFrame{
 
     //Konstruktor
     public VintageStore () {
-        setTitle("Vinatge Store");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(300, 150);
-        setContentPane(myPanel);
-        setVisible(true);
-        setResizable(false);
+        JFrame myPanel = new JFrame("Vintage Store");
+        myPanel.setTitle("Vinatge Store");
+        myPanel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        myPanel.setSize(800, 600);
+        myPanel.setContentPane(myPanel);
+        myPanel.setResizable(false);
+        myPanel.setVisible(true);
+        myPanel.setLayout(null);
+
+        //Radio Buttons Erstellen
+        JRadioButton rb_Damen = new JRadioButton("Damen");
+        JRadioButton rb_Herren = new JRadioButton("Herren");
 
         //Grupperung der Buttons
-        ButtonGroup gruppierung = new ButtonGroup();
-        gruppierung.add(rb_Damen);
-        gruppierung.add(rb_Herren);
+        ButtonGroup geschlechtgruppierung = new ButtonGroup();
+        geschlechtgruppierung.add(rb_Damen);
+        geschlechtgruppierung.add(rb_Herren);
+
+        myPanel.add(rb_Damen);
+        myPanel.add(rb_Herren);
 
 
         rb_Damen.addActionListener(new ActionListener() {
