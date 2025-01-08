@@ -1,7 +1,8 @@
 package VintageStore;
 
-public class Oberteile {
 /*
+public class Oberteile {
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -95,9 +96,9 @@ import java.awt.event.ActionListener;
 
                 // Setze das Panel und zeige das Fenster
                 fenster2.add(panel);
-                fenster2.setVisible(true); */
+                fenster2.setVisible(true);
             }
         }
     }
 
-}
+} */
