@@ -5,13 +5,14 @@ public class SchuhAuswahl {
     private String marke;
     private String farbe;
     private double groesse;
-    private boolean material;
+    private boolean leder;
     private double preis;
 
-    public SchuhAuswahl (String art, String marke, String farbe, double groeße, boolean material, double preis) {
+    public SchuhAuswahl (String art, String marke, String farbe, double groeße, boolean leder, double preis) {
         this.art = art;
         this.marke = marke;
         this.farbe = farbe;
+        this.leder = leder;
         this.groesse = groeße;
         this.preis = preis;
     }
@@ -47,8 +48,8 @@ public class SchuhAuswahl {
         this.groesse = groesse;
     }
 
-    public boolean isMaterial (boolean m) {
-        isMaterial(true);
+    public boolean isLeder (boolean m) {
+        isLeder(true);
         return m;
     }
 
@@ -61,7 +62,7 @@ public class SchuhAuswahl {
     }
 
     public String beschreibung() {
-        return "Art: " + art + ", Marke: " + marke + ", Farbe: " + farbe + ", Größe: " + groesse + ", Leder:" + material +
+        return "Art: " + art + ", Marke: " + marke + ", Farbe: " + farbe + ", Größe: " + groesse + ", Leder:" + leder +
                 ", Preis: " + preis;
     }
 
