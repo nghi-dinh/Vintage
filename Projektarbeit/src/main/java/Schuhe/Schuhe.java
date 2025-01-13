@@ -33,6 +33,7 @@ public class Schuhe {
 
                 }
             });
+
             checkb_Material.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {

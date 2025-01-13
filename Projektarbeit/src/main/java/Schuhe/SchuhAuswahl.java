@@ -70,9 +70,17 @@ public class SchuhAuswahl {
     public static void main(String[] args) {
 
         // Erstellen eines Schuhobjekts
-        SchuhAuswahl schuh1 = new SchuhAuswahl ("Sneaker", "Adidas", "blau", 40, false, 110);
+        SchuhAuswahl s1 = new SchuhAuswahl ("Sneaker", "Adidas", "blau", 40, false, 110);
+        SchuhAuswahl s2 = new SchuhAuswahl("Boots","Dr.Martins","schwarz", 42,true,150);
+
+        /*
+        ArrayList<SchuhAuswahl> meineSchuhe = new ArrayList<SchuhAuswahl>();
+        meineSchuhe.add(s1);
+        //meineSchuhe.clear();
+        meineSchuhe.add(s2);
+         */
 
         // Ausgabe der Beschreibung des Schuhs
-        System.out.println(schuh1.beschreibung());
+        System.out.println(s1.beschreibung());
     }
 }
